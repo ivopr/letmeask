@@ -1,0 +1,118 @@
+.page {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  aside {
+    background: #835AFD;
+    color: #FFFFFF;
+    display: flex;
+    flex: 7;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 80px;
+
+    img {
+      max-width: 320px;
+    }
+
+    strong {
+      font: 700 36px "Poppins", sans-serif;
+      line-height: 42px;
+      margin-top: 16px;
+    }
+
+    p {
+      color: #F8F8F8;
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 16px;
+    }
+  }
+
+  main {
+    align-items: center;
+    display: flex;
+    flex: 8;
+    justify-content: center;
+    padding: 0 32px;
+
+    .content {
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      max-width: 320px;
+      text-align: center;
+      width: 100%;
+
+      > img {
+        align-self: center;
+      }
+
+      form {
+        input {
+          background: #FFFFFF;
+          border: 1px solid #A8A8B3;
+          border-radius: 8px;
+          height: 50px;
+          padding: 0 16px;
+        }
+
+        button {
+          margin-top: 16px;
+        }
+
+        button, input {
+          width: 100%;
+        }
+      }
+    }
+
+    .newRoom {
+      align-items: center;
+      background: #EA4335;
+      border: 0;
+      border-radius: 8px;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: flex;
+      font-weight: 500;
+      justify-content: center;
+      height: 50px;
+      margin-top: 64px;
+      transition: filter 0.2s;
+      
+      img {
+        margin-right: 8px;
+      }
+
+      &:hover {
+        filter: brightness(0.9)
+      }
+    }
+
+    .separator {
+      align-items: center;
+      color: #A8A8B3;
+      display: flex;
+      font-size: 14px;
+      margin: 32px 0;
+
+      &::after {
+        background: #A8A8B3;
+        content: "";
+        flex: 1;
+        height: 1px;
+        margin-left: 16px;
+      }
+
+      &::before {
+        background: #A8A8B3;
+        content: "";
+        flex: 1;
+        height: 1px;
+        margin-right: 16px;
+      }
+    }
+  }
+}
